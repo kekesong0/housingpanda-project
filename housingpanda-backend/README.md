@@ -34,6 +34,9 @@ DB_PASSWORD=your_mysql_password
 DB_NAME=your_database_name
 ```
 
+> **Note on Environment Variables Security**: 
+> While it's generally a security best practice to keep `.env` files containing sensitive database credentials out of version control, we've included a sample `.env` file in this repository to facilitate quick setup and testing for HousingPanda engineers. In production environments, please ensure to use proper secrets management and never commit sensitive credentials to version control.
+
 ### 4. Start the server
 ```bash
 node server.js
@@ -70,7 +73,7 @@ The server will run on [http://localhost:3000](http://localhost:3000) by default
 │   └── index.js
 ├── routes/             # API routes
 │   └── listings.js
-├── .env                # Environment variables (not committed)
+├── .env                # Environment variables (for testing purposes only, not for production use)
 ├── .gitignore
 ├── package.json
 ├── server.js           # Entry point

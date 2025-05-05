@@ -30,8 +30,8 @@ coverage/
 bower_components/
 
 # Environment variable files
-.env
-.env.*
+# .env
+# .env.*
 
 # Build output
 dist/
