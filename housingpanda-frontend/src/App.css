@@ -1,0 +1,203 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.app-layout {
+  min-height: 100vh;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  background: #42843c;
+  padding: 0 32px;
+  height: 64px;
+}
+
+.logo {
+  color: #fff;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 40px;
+}
+
+.app-content {
+  padding: 24px;
+  background: #FAFAFA; 
+}
+
+.error-message {
+  background: #fff2f0;
+  border: 1px solid #ffccc7;
+  color: #ff4d4f;
+  padding: 12px 24px;
+  border-radius: 4px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+  .app-header {
+    padding: 0 12px;
+  }
+
+  .logo {
+    margin-right: 24px;
+    font-size: 18px;
+  }
+
+  .app-content {
+    padding: 16px;
+  }
+}
+
+.ant-menu-dark, .ant-menu-dark .ant-menu-sub {
+  background: #2E7D32 !important; 
+}
+
+.ant-menu-dark .ant-menu-item-selected {
+  background-color: #4CAF50 !important; 
+  color: #fff !important;
+}
+
+.ant-menu-dark .ant-menu-item {
+  color: #fff !important;
+}
+
+.ant-menu-dark .ant-menu-item:hover {
+  background-color: #4CAF50 !important; 
+  color: #fff !important;
+}
+
+.ant-btn-primary {
+  background-color: #FF9800 !important; 
+  border-color: #FF9800 !important;
+}
+
+.ant-btn-primary:hover {
+  background-color: #F57C00 !important; 
+  border-color: #F57C00 !important;
+}
+
+body, .ant-typography, .ant-card, .ant-form, .ant-input, .ant-input-number, .ant-tag, .ant-card-head-title, .ant-form-item-label > label {
+  color: #000000 !important; 
+}
+
+/* List page styles */
+.listings-page {
+  background-color: transparent !important;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.listing-card {
+  background-color: #FFFFFF !important;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.listing-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.listing-card-cover {
+  background: linear-gradient(135deg, #E0F2F1 0%, #F1F8E9 100%) !important; /* 更淡的灰绿色渐变 */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.listing-card-icon {
+  font-size: 48px;
+  color: #FF9800 !important; 
+}
+
+.nav {
+  display: flex;
+  gap: 12px 0px;
+  margin-left: auto;
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 6px 18px;
+  border-bottom: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-link .nav-label {
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  background: #A5D6A7;
+  color: #388E3C;
+}
+
+.nav-link.active {
+  background: #A5D6A7;
+  color: #388E3C;
+  font-weight: 700;
+}
+
+.nav-link.active .nav-label {
+  color: #388E3C;
+}
+
+@media (max-width: 600px) {
+  .app-header {
+    padding: 0 10px;
+    height: 48px;
+  }
+  .logo {
+    font-size: 18px;
+    margin-right: 16px;
+  }
+  .nav {
+    gap: 12px;
+  }
+  .nav-link {
+    font-size: 14px;
+  }
+}

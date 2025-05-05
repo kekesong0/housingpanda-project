@@ -1,0 +1,64 @@
+.listing-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.listing-form-card {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.listing-form-card .ant-card-head {
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.listing-form-card .ant-card-head-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1890ff;
+}
+
+.listing-form-card .ant-form-item-label > label {
+  font-weight: 500;
+}
+
+.listing-form-card .ant-input,
+.listing-form-card .ant-input-number,
+.listing-form-card .ant-input-textarea {
+  border-radius: 4px;
+}
+
+.listing-form-card .ant-input:hover,
+.listing-form-card .ant-input-number:hover,
+.listing-form-card .ant-input-textarea:hover {
+  border-color: #40a9ff;
+}
+
+.listing-form-card .ant-input:focus,
+.listing-form-card .ant-input-number:focus,
+.listing-form-card .ant-input-textarea:focus {
+  border-color: #1890ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.listing-form-card .ant-btn-primary {
+  height: 40px;
+  font-size: 16px;
+  border-radius: 4px;
+  background: #1890ff;
+  border: none;
+  transition: all 0.3s;
+}
+
+.listing-form-card .ant-btn-primary:hover {
+  background: #40a9ff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(24, 144, 255, 0.4);
+}
+
+.listing-form-card .ant-input-prefix,
+.listing-form-card .ant-input-number-prefix {
+  color: #bfbfbf;
+  margin-right: 8px;
+} 

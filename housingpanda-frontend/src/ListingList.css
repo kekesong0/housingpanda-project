@@ -1,0 +1,144 @@
+.listings-page {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #FAFAFA;
+}
+
+.listings-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.listings-loading,
+.listings-empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.listing-card {
+  height: 100%;
+  transition: all 0.3s;
+}
+
+.listing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.listing-card-cover {
+  height: 160px;
+  background: linear-gradient(135deg, #1890ff 0%, #36cfc9 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.listing-card-icon {
+  font-size: 64px;
+  color: white;
+}
+
+.listing-card-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #262626;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.listing-card-content {
+  padding: 0;
+  text-align: left;
+}
+
+.listing-card-title,
+.listing-card-description,
+.listing-card-info,
+.listing-card-address,
+.listing-card-contact {
+  text-align: left;
+}
+
+.listing-card-description {
+  color: #595959;
+  margin-bottom: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.listing-card-info {
+  margin-bottom: 16px;
+}
+
+.listing-card-info .ant-tag {
+  margin-right: 8px;
+  padding: 4px 8px;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.listing-card-info .ant-tag:last-child {
+  margin-bottom: 0;
+}
+
+.listing-card-info .ant-tag[color="blue"], .listing-card-info .ant-tag.ant-tag-blue {
+  background: #FFF3E0 !important;
+  border-color: #FF9800 !important;
+  color: #FF9800 !important;
+}
+
+.listing-card-info .ant-tag[color="blue"] .anticon, .listing-card-info .ant-tag.ant-tag-blue .anticon {
+  color: #FF9800 !important;
+}
+
+.listing-card-address {
+  color: #8c8c8c;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.listing-card-address .anticon,
+.listing-card-contact .anticon {
+  margin-right: 8px;
+}
+
+.delete-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: #FF9800;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 2;
+  padding: 1px;
+  border-radius: 50%;
+  transition: background 0.2s, color 0.2s;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.delete-btn:hover {
+  background: #FFF3E0;
+  color: #F57C00;
+}
+.delete-btn .anticon {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1;
+} 
