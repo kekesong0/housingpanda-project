@@ -6,8 +6,8 @@ This is a Node.js + Express backend service for managing housing listings. It pr
 ## Tech Stack
 - Node.js
 - Express
-- MySQL (using `mysql2` package)
-- dotenv (for environment variable management)
+- MySQL
+- dotenv 
 - CORS
 
 ## Getting Started
@@ -35,7 +35,7 @@ DB_NAME=your_database_name
 ```
 
 > **Note on Environment Variables Security**: 
-> While it's generally a security best practice to keep `.env` files containing sensitive database credentials out of version control, we've included a sample `.env` file in this repository to facilitate quick setup and testing for HousingPanda engineers. In production environments, please ensure to use proper secrets management and never commit sensitive credentials to version control.
+> While it's generally a security best practice to keep `.env` files containing sensitive database credentials out of version control, I have included a sample `.env` file in this repository to facilitate quick setup and testing for HousingPanda engineers. In production environments, please ensure to use proper secrets management and never commit sensitive credentials to version control.
 
 ### 4. Start the server
 ```bash

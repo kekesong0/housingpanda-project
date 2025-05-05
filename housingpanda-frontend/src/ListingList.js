@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Row, Col, Tag, Empty, Spin } from 'antd';
+import { Card, Row, Col, Tag, Empty, Spin, Modal } from 'antd';
 import { HomeOutlined, DollarOutlined, PhoneOutlined, EnvironmentOutlined, CloseOutlined } from '@ant-design/icons';
 import './ListingList.css';
 
@@ -39,7 +39,36 @@ function ListingList({ listings, loading, onDelete }) {
                     className="delete-btn"
                     onClick={e => {
                       e.stopPropagation();
-                      if (onDelete) onDelete(item, idx);
+                      Modal.confirm({
+                        title: (
+                          <span style={{ color: '#FF9800', fontWeight: 700, fontSize: 18 }}>
+                            Confirm Deletion
+                          </span>
+                        ),
+                        content: (
+                          <div style={{ color: '#333', fontSize: 16, marginTop: 8 }}>
+                            Are you sure you want to delete this listing?<br />
+                            <span style={{ color: '#888', fontSize: 14 }}>
+                              This action cannot be undone.
+                            </span>
+                          </div>
+                        ),
+                        okText: 'Delete',
+                        okType: 'danger',
+                        cancelText: 'Cancel',
+                        centered: true,
+                        bodyStyle: { borderRadius: 12, padding: 28 },
+                        okButtonProps: {
+                          style: { background: '#FF9800', borderColor: '#FF9800', fontWeight: 600, borderRadius: 8 }
+                        },
+                        cancelButtonProps: {
+                          style: { fontWeight: 500, borderRadius: 8 }
+                        },
+                        onOk: () => {
+                          console.log('Modal onOk called with item:', item, 'id:', item.id);
+                          return onDelete(item, idx);
+                        },
+                      });
                     }}
                     title="Delete"
                   >
@@ -75,4 +104,4 @@ function ListingList({ listings, loading, onDelete }) {
   );
 }
 
-export default ListingList; 
+export default ListingList;
